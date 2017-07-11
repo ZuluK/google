@@ -69,6 +69,13 @@ a.button:hover {
   background-color: #e1e1e1;
 }
 /* changes the profile image height and weight. Becomes a circle shaped image */
+
+@media (max-width:420px) {
+  .profile-img {
+    display:none;
+  }
+}
+
 .profile-img {
   border-radius: 25px;
   height: 32px;
@@ -92,6 +99,8 @@ a.button:hover {
   margin: 0 auto;
 }
 /* search box width has increased. Font-size changes */
+
+
 .search-box input {
   width: 600px;
   margin: 0 auto;
@@ -146,11 +155,23 @@ a.button:hover {
   margin-left: 0;
 }
 /* left links shift to the left-bottom */
+
+@media (max-width:522px){
+  ul.left-site-links {
+    position: absolute;
+  }
+}
 .left-site-links {
   float:left;
   padding-left: 20px;
 }
 /* right site links shift to top-right and left site links are positioned to top left */
+@media (max-width:492px){
+  ul.right-site-links {
+    position: absolute;
+    top: 32px;
+  }
+}
 .right-site-links {
   float: right;
   padding-right: 10px;
