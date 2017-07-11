@@ -156,22 +156,12 @@ a.button:hover {
 }
 /* left links shift to the left-bottom */
 
-@media (max-width:522px){
-  ul.left-site-links {
-    position: absolute;
-  }
-}
 .left-site-links {
   float:left;
   padding-left: 20px;
 }
 /* right site links shift to top-right and left site links are positioned to top left */
-@media (max-width:492px){
-  ul.right-site-links {
-    position: absolute;
-    top: 32px;
-  }
-}
+
 .right-site-links {
   float: right;
   padding-right: 10px;
@@ -198,4 +188,19 @@ a.button:hover {
   margin: 2px 10px 0;
   letter-spacing: 0.1px;
   font-size: 14px;
+}
+@media (max-width:522px){
+  ul.left-site-links {
+    position: absolute;
+  }
+@media (max-width:492px){
+  ul.right-site-links {
+    position: absolute;
+    top: 32px;
+    }
+@media (max-width:638px){
+  div.input input {
+    width: 55%;
+    
+  }
 }
